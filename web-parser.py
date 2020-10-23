@@ -11,7 +11,7 @@ company_names = []
 
 for header in all_headers:
     if header.find('a'):
-        # company_names.append(header.find('a').text)
+        company_names.append(header.find('a').text)
         company_names.append(header.find('a')['href'])
 
 for company_name in company_names:
